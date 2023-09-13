@@ -1,0 +1,36 @@
+.container{
+    height: 60vh;
+    width: 80%;
+    margin: 0 auto;
+}
+.position{
+    display: block;
+    width: 40%;
+    height: 30px;
+    margin: 20px auto;
+}
+
+.submit {
+    /*提交按钮样式*/
+    width: 30%;
+    max-width: 200px;
+    background-color: #2DC031FF;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px auto;
+    /*上下间距为5，左右居中*/
+    border: none;
+    border-radius: 10px;
+}
+.submit:hover {
+    /*提交按钮样式*/
+    width: 30%;
+    max-width: 200px;
+    background-color: #67AA6AFF;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px auto;
+    /*上下间距为5，左右居中*/
+    border: none;
+    border-radius: 10px;
+}

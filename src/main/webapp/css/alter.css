@@ -1,0 +1,180 @@
+body.signin {
+    /*背景设置*/
+    background: #18c8f6;
+    height: auto;
+    /*height:auto，是指根据块内内容自动调节高度*/
+    background:url("../pictures/background.jpg") no-repeat center center fixed;
+    /*no-repeat表示此背景图片在页面中只出现一次,不进行横向和纵向的平铺；fixed表示当页面的其余部分滚动时,背景图像不会移动；*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*在使用jade和styl写手机页面时，且元素为背景图片时，常会使用到background-size cover，它的意思是使背景图片铺满整个元素，且保证背景图片的宽高比。*/
+    /*图片以背景的形式铺满整个屏幕，不留空白区域*/
+    /*保持图像的纵横比（图片不变形）*/
+    /*图片居中*/
+    /*不出现滚动条*/
+    /*多浏览器支持(所以全写)*/
+    color: rgba(255,255,255,.95);
+    /*最后一个值是透明度*/
+}
+
+/*登录部分大小及位置*/
+.signinpanel
+{
+    /*登录框大小设置*/
+    width: 500px;
+    /*设置登录窗口宽度*/
+    margin: 5% auto;
+    /*各个侧边距离,上右下左，auto自动即居中*/
+}
+
+
+
+/*登录界面a的样式*/
+.ax{
+    color: blue;
+    font-size: 14px;
+    /*color是输入文字的颜色*/
+    font-weight: bold;
+}
+.ax:hover{
+    color: gold;
+    font-size: 14px;
+    /*color是输入文字的颜色*/
+    font-weight: bold;
+}
+
+
+/*代码框样式*/
+.signinpanel .code {
+    /*输入框装饰*/
+    /*display: block;*/
+    /*无装饰*/
+    width: 40%;
+    padding: 5px 0 5px 10px;
+    margin: 10px auto;
+    color: rgba(0,0,0,.95);
+    font-size: 14px;
+    /*color是输入文字的颜色*/
+    border: none;
+    /*border：none表示无边框*/
+    border-radius: 10px;/*椭圆边框*/
+}
+
+/*登录用户名密码框*/
+.signinpanel .input {
+    /*输入框装饰*/
+    /*display: block;*/
+    /*无装饰*/
+    width: 100%;
+    padding: 5px 0 5px 10px;
+    margin: 10px auto;
+    color: rgba(0,0,0,.95);
+    font-size: 14px;
+    /*color是输入文字的颜色*/
+    border: none;
+    /*border：none表示无边框*/
+    border-radius: 10px;/*椭圆边框*/
+}
+
+
+.signinpanel .input1 {
+    /*输入文本框装饰*/
+    /*display: block;*/
+    /*无装饰*/
+    width: 100%;
+    height:100px;
+    padding: 5px 0 5px 10px;
+    margin: 10px auto;
+    color: rgba(0,0,0,.95);
+    font-size: 14px;
+    /*color是输入文字的颜色*/
+    border: none;
+    /*border：none表示无边框*/
+    border-radius: 10px;/*椭圆边框*/
+}
+
+.label {
+    /*输入框装饰*/
+    /*display: block;*/
+    /*无装饰*/
+    color: black;
+    font-family: 楷体;
+    font-size: 14px;
+    font-weight: bold;
+    /*color是输入文字的颜色*/
+}
+
+.signinpanel .submit {
+    /*提交按钮样式*/
+    width: 40%;
+    background-color: #2DC031FF;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px auto;
+    /*上下间距为5，左右居中*/
+    border: none;
+    border-radius: 10px;
+}
+.signinpanel .submit:hover {
+    /*提交按钮样式*/
+    width: 40%;
+    background-color: #67AA6AFF;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px auto;
+    /*上下间距为5，左右居中*/
+    border: none;
+    border-radius: 10px;
+}
+
+.signinpanel form {
+    /*form表单样式*/
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255,255,255,.3);
+    /*边框线*/
+    -moz-box-shadow: 0 3px 0 rgba(12, 12, 12, 0.03);
+    -webkit-box-shadow: 0 3px 0 rgba(12, 12, 12, 0.03);
+    box-shadow: 0 3px 0 rgba(12, 12, 12, 0.03);
+    /*Box-shadow属性表现阴影效果*/
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    padding: 30px;
+    /*    paddding：上、右、下、左，的格式来定义内边距的，可以设置字与输入框的间距*/
+}
+
+.signup-footer
+{
+    border-top: solid 1px rgba(255,255,255,.5);
+    /*顶端线*/
+    margin:20px 0;
+    padding-top: 15px;
+}
+
+/* 顶部样式 */
+.navigation
+{
+    width: 100%;
+    background-color:#f5f5f5;
+    overflow: hidden;       /*控制内容溢出*/
+    font-size:15px;
+    font-weight: bold;
+    font-family: 楷体;
+}
+.navigation a/*初始时*/
+{
+    background-color: #f5f5f5;  /*这样才能显示灰色*/
+    float: left;
+    display:block;          /*按块类元素来显示*/
+    font-size:15px;
+    padding: 15px 20px;
+
+}
+.navigation a:hover/*被鼠标指向时*/
+{
+    background-color: white;
+    font-size:15px;
+}

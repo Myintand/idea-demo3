@@ -1,0 +1,102 @@
+/* 通用样式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+form div {
+    margin-bottom: 20px;
+}
+label {
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+input[type="text"], textarea {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+input[type="submit"] {
+    width: 120px;
+    height: 40px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: center;
+}
+input[type="submit"]:hover {
+    background-color: #ffa366;
+}
+
+/* 特殊样式 */
+#product-image {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    margin-bottom: 20px;
+    position: relative;
+}
+#product-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+#product-image input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+#product-price {
+    width: 150px;
+}
+#product-desc {
+    height: 200px;
+}
+
+
+/* 顶部导航栏 */
+.indexnavigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+/* 导航链接 */
+.indexnavigation a {
+    color: #666;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.indexnavigation a:hover {
+    color: #ff7f50;
+}

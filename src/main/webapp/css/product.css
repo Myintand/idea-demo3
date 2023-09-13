@@ -1,0 +1,201 @@
+.product
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 1px solid #d3d3d3;
+    /*边框*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /*阴影*/
+}
+
+.product-image {
+    width: 200px;
+    margin-right: 20px;
+    border: 1px solid #d3d3d3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* 隐藏超出容器宽度的部分，以避免内部阴影溢出 */
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative; /* 为内部阴影设置基准位置 */
+}
+
+.product-name {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+.product-price {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.quantity {
+    display: flex;
+    float: right;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quantity-btn {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 1;
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    margin: 2px 10px;
+}
+
+.quantity-input {
+    font-size: 18px;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.add-to-cart {
+    display: block;
+    font-size: 18px;
+    background-color: #e3621d;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 20px; /*上下左右内边距*/
+    border-radius: 5px; /*圆角半径*/
+    border: none; /*去掉边框*/
+    transition: background-color 0.3s ease-in-out; /*鼠标悬停时颜色渐变效果*/
+}
+
+.button1 {
+    background-color: #e3621d; /*橙色*/
+    color: white; /*白色*/
+    padding: 10px 20px; /*上下左右内边距*/
+    float: right;
+    border-radius: 5px; /*圆角半径*/
+    border: none; /*去掉边框*/
+    transition: background-color 0.3s ease-in-out; /*鼠标悬停时颜色渐变效果*/
+}
+
+.button1:hover {
+    background-color: #be4501; /*悬停时背景颜色变为浅橙色*/
+}
+
+.button {
+    text-align: center;
+    background-color: #41d52b; /*淡绿色*/
+    color: white; /*白色*/
+    padding: 10px 20px; /*上下左右内边距*/
+    border-radius: 5px; /*圆角半径*/
+    border: none; /*去掉边框*/
+    transition: background-color 0.3s ease-in-out; /*鼠标悬停时颜色渐变效果*/
+}
+
+.button:hover {
+    background-color: green; /*悬停时背景颜色变为绿色*/
+}
+
+.input-box {
+    padding: 10px; /*内边距大小*/
+    width: 200px; /*输入框宽度*/
+    border-radius: 5px; /*圆角半径*/
+    border: none; /*去掉边框*/
+    background-color: #f5f5f5; /*背景颜色*/
+    color: #333; /*文本颜色*/
+    font-size: 16px; /*字体大小*/
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);/*添加阴影效果*/
+}
+
+/*鼠标悬停时*/
+.input-box:hover {
+    background-color: #ebebeb;
+}
+
+/*输入框获得焦点时*/
+.input-box:focus {
+    outline: none; /*去掉默认的聚焦边框*/
+    box-shadow: 0 0 2px #74cfae; /*添加聚焦效果*/
+}
+
+
+/* 将购物结算模块固定在底部 */
+.checkout {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* 修改宽度 */
+    background-color: #fff9f4;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 2px solid #ccc;
+    margin: 0 auto; /* 居中 */
+}
+
+.checkout-total
+{
+    float: right;
+    color: darkgoldenrod;
+    border: none;
+    padding: 5px 10px;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+    color: #3f51b5;
+}
+
+
+.checkout p {
+    margin-bottom: 20px;
+    color: #999;
+}
+
+.checkout button {
+    background-color: #ff6600;
+    float: right;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.note{
+    font-weight: bold;
+    padding: 2px 4px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #3f51b5;
+    font-size: 14px;
+    color: white;
+}
+.note_input
+{
+    /*输入框装饰*/
+    /*display: block;*/
+    /*无装饰*/
+    width: 40%;
+    padding: 2px 4px;
+    color: rgba(0,0,0,.95);
+    font-size: 14px;
+    /*border：none表示无边框*/
+    border-radius: 10px;/*椭圆边框*/
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

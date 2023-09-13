@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.ingredient-search {
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ingredient-search h2 {
+    margin-top: 0;
+}
+
+.ingredient-search p {
+    margin-bottom: 10px;
+}
+
+.ingredient-search input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recipe-card {
+    width: 700px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.recipe-card h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.recipe-card p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.recipe-card .details {
+    display: none;
+    margin-top: 10px;
+    font-family: 华文仿宋;font-size: 20px;
+}
+
+.recipe-card .details ol {
+    padding-left: 20px;
+}
+
+.recipe-card .show-button {
+    cursor: pointer;
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.img1 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+.img2{
+    width: 50px;
+    height: 50px;
+}
+
+h3 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 60px;
+    font-family: 华文行楷, cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* 添加文字阴影效果 */
+    padding: 20px; /* 添加内边距 */
+    margin: 0; /* 去除默认的外边距 */
+    background-color: #f7f7f7; /* 设置背景颜色为浅灰色 */
+    border-radius: 10px; /* 添加圆角边框 */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* 添加盒子阴影效果 */
+    text-align: center; /* 文字居中对齐 */
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff8c00;
+    box-shadow: 0 2px 4px rgba(255, 140, 0, 0.3);
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#pagination button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#pagination button:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+
+.delete-payment-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-payment-btn i {
+    font-size: 18px;
+}
+
+.delete-payment-btn {
+    color: #e63946;
+}
+
+/* 顶部导航栏 */
+.indexnavigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+/* 导航链接 */
+.indexnavigation a {
+    color: #666;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.indexnavigation a:hover {
+    color: #ff7f50;
+}
+
+
+.collect-button {
+    background-color: #e3621d; /*橙色*/
+    color: white; /*白色*/
+    padding: 10px 20px; /*上下左右内边距*/
+    margin: 5px 5px;
+    float: right;
+    border-radius: 5px; /*圆角半径*/
+    border: none; /*去掉边框*/
+    transition: background-color 0.3s ease-in-out; /*鼠标悬停时颜色渐变效果*/
+}
+
+.collect-button:hover {
+    background-color: #be4501; /*悬停时背景颜色变为浅橙色*/
+}
+
+.collect {
+    float: left;
+    margin-left: 90%;
+    margin-top: 5%;
+    text-align: left;
+    background-color: white;
+    position: fixed;
+    padding: 20px; /* 调整内边距 */
+    border: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 添加阴影 */
+    overflow: hidden; /* 隐藏溢出内容 */
+}
+
+.collect p {
+    margin-bottom: 0; /* 清除段落的下边距 */
+    line-height: 1.5; /* 段落行高 */
+    color: orange; /* 段落颜色 */
+}

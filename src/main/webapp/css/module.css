@@ -1,0 +1,153 @@
+/* 顶部导航栏 */
+.indexnavigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+body.signin {
+    /*背景设置*/
+    background: #18c8f6;
+    height: auto;
+    /*height:auto，是指根据块内内容自动调节高度*/
+    background:url("../pictures/eat.webp") no-repeat center center fixed;
+    /*no-repeat表示此背景图片在页面中只出现一次,不进行横向和纵向的平铺；fixed表示当页面的其余部分滚动时,背景图像不会移动；*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*在使用jade和styl写手机页面时，且元素为背景图片时，常会使用到background-size cover，它的意思是使背景图片铺满整个元素，且保证背景图片的宽高比。*/
+    /*图片以背景的形式铺满整个屏幕，不留空白区域*/
+    /*保持图像的纵横比（图片不变形）*/
+    /*图片居中*/
+    /*不出现滚动条*/
+    /*多浏览器支持(所以全写)*/
+    color: rgba(255,255,255,.95);
+    /*最后一个值是透明度*/
+}
+
+/* 导航链接 */
+.indexnavigation a {
+    color: #666;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.indexnavigation a:hover {
+    color: #ff7f50;
+}
+
+.module
+{
+    display: flex;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    /*box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);：添加一个微弱的阴影效果，以增加立体感和层次感。*/
+}
+
+.module img {
+    width: 130px;
+    height: 130px;
+    margin-right: 1rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.module .text {
+    flex: 1;
+}
+
+.module h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+}
+
+.module p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    font-family: "Roboto", sans-serif;
+}
+
+.module p:last-child {
+    margin-top: 10px;
+}
+
+.module .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: #ff7f50;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease-out;
+}
+
+.module .btn:hover {
+    background-color: #ff6347;
+}
+
+/*评分*/
+.module label{
+
+    color:red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.index_submit {
+    /*提交按钮样式*/
+    cursor: pointer;
+    width: 30%;
+    max-width: 500px;
+    height: 50px;
+    background-color: #2DC031FF;
+    color: white;
+    margin: 20px auto;
+    /*上下间距为5，左右居中*/
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.systemtime{
+    float: right;
+    color:red;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 楷体;
+}
+
+.locationax{
+    color: blue;
+    font-size: 16px;
+    /*color是输入文字的颜色*/
+    font-weight: bold;
+    text-decoration: none;
+}
+.locationax:hover{
+    color: gold;
+    font-size: 16px;
+    /*color是输入文字的颜色*/
+    font-weight: bold;
+    text-decoration: none;
+}
